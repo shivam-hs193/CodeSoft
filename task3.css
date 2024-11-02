@@ -1,0 +1,70 @@
+/* Calculator Layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #636060;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: auto;
+    
+    background-color: #0a0b0b;
+    border-radius: 10%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: right;
+    font-size: 24px;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: #333;
+    text-align: right;
+}
+
+.buttons {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+button {
+    background-color: #2d6bcf;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    padding: 20px;
+    border-radius: 45%; /* Make buttons round */
+    cursor: pointer;
+    height: 100px; /* Adjust the height for circular appearance */
+    width: 100px;  /* Adjust the width for circular appearance */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #255ca1;
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+button:active {
+    background-color: #1f4d87;
+}
